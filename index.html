@@ -16,7 +16,7 @@
 </head>
 <body class="bg-[#f3f3ef] text-[#1a1a1a] min-h-screen flex flex-col justify-between p-6 md:p-16 selection:bg-black selection:text-white">
 
-    <!-- Top Navigation / Header -->
+
     <header class="max-w-2xl w-full mx-auto mb-12">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#1a1a1a] pb-6">
             <div>
@@ -26,7 +26,7 @@
                 <p id="role-text" class="text-sm text-neutral-600 mt-1">14yo developer</p>
             </div>
             <div class="flex items-center gap-4 text-sm">
-                <!-- Language Switcher -->
+  
                 <div class="flex items-center border border-[#1a1a1a] text-xs">
                     <button id="btn-en" onclick="setLang('en')" class="px-2 py-1 bg-[#1a1a1a] text-white font-bold transition-colors cursor-pointer">EN</button>
                     <button id="btn-hu" onclick="setLang('hu')" class="px-2 py-1 bg-transparent text-[#1a1a1a] hover:bg-neutral-200 transition-colors cursor-pointer">HU</button>
@@ -39,10 +39,9 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main class="max-w-2xl w-full mx-auto space-y-12 flex-grow">
         
-        <!-- About Section -->
+
         <section class="space-y-4">
             <h2 id="about-heading" class="text-xs uppercase tracking-widest text-neutral-500 font-bold">// about</h2>
             <p id="about-text" class="text-base leading-relaxed">
@@ -50,7 +49,7 @@
             </p>
         </section>
 
-        <!-- Projects Section -->
+   
         <section class="space-y-4">
             <h2 id="projects-heading" class="text-xs uppercase tracking-widest text-neutral-500 font-bold">// projects</h2>
             
@@ -70,7 +69,7 @@
             </div>
         </section>
 
-        <!-- Links / Contact Section -->
+      
         <section class="space-y-4">
             <h2 id="links-heading" class="text-xs uppercase tracking-widest text-neutral-500 font-bold">// links</h2>
             <ul class="space-y-2 text-sm">
@@ -83,12 +82,12 @@
 
     </main>
 
-    <!-- Footer -->
+
     <footer class="max-w-2xl w-full mx-auto mt-16 pt-6 border-t border-[#1a1a1a] text-xs text-neutral-500 flex flex-col sm:flex-row justify-between gap-2">
         <p>© 2026 Tompos Patrik K.</p>
     </footer>
 
-    <!-- Language Toggle Script -->
+
     <script>
         const translations = {
             en: {
@@ -106,7 +105,7 @@
                 role: "14 éves fejlesztő",
                 status: "online",
                 aboutHeading: "// rólam",
-                aboutText: "Szia, Patrik vagyok. 14 éves vagyok, szeretek kódolni, projekteken bütykölni, és dolgokat felrakni a webre. Ez az én egyszerű, sallangmentes sarkom az interneten. Semmi felesleges duma, csak a nyers munka.",
+                aboutText: "Salut, Patrik vagyok. 14 éves vagyok, szeretek kódolni, projekteken bütykölni, és dolgokat felrakni a webre. Ez az én egyszerű, sallangmentes sarkom az interneten. Semmi felesleges duma, csak a nyers munka.",
                 projectsHeading: "// projektek",
                 visitBtn: "megnyitás ↗",
                 projectDesc: "Nyílt forráskódú böngésző Pythonban. Tekintsd meg a fenti linken.",
@@ -128,7 +127,7 @@
                 document.getElementById('links-heading').textContent = t.linksHeading;
                 document.getElementById('footer-note').textContent = t.footerNote;
 
-                // Update button active styles
+          
                 const btnEn = document.getElementById('btn-en');
                 const btnHu = document.getElementById('btn-hu');
                 if (lang === 'en') {
